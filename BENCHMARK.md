@@ -6,6 +6,7 @@
   - **Configurable TDP-up base frequency**: 3.00 GHz
   - **Configurable TDP-down base frequency**: 1.70 GHz
 - **RAM**: 16 GB DDR4-3200
+- **GPU**: No dedicated GPU (integrated Intel GPU only)
 
 ## Command
 ```
@@ -18,5 +19,9 @@
 
 ## Notes
 - Benchmark uses the same PostgreSQL configuration as the application.
+- Hibernate batch settings used during the run:
+  - `hibernate.jdbc.batch_size=50`
+  - `hibernate.order_inserts=true`
+  - `hibernate.order_updates=true`
 - The benchmark is executed inside the JUnit test:
   - [MachineEventServiceTest](src/test/java/com/example/machine_factory/service/MachineEventServiceTest.java#L387)
