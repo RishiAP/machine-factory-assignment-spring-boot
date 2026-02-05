@@ -47,7 +47,7 @@ Backend service for ingesting machine events and serving production statistics.
 - Fast, in-memory validation before any DB access.
 - Dedupe with in-memory map per batch.
 - Batch writes via `saveAll` with Hibernate batch settings.
-- Batch configuration details are documented in [BENCHMARK.md](BENCHMARK.md) and set in [src/main/resources/application.properties](src/main/resources/application.properties).
+- Batch configuration details are documented in [BENCHMARK.md](BENCHMARK.md#L22) and set in [src/main/resources/application.properties](src/main/resources/application.properties).
 
 ## Edge Cases & Assumptions
 - `receivedTime` in requests is ignored and replaced by server time.
